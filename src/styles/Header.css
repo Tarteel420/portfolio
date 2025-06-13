@@ -5,11 +5,13 @@ nav {
   padding: 16px 32px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 32px;
   position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -21,5 +23,18 @@ nav a {
 }
 
 nav a:hover {
-  color: #125716; /* React blue */
+  color: #125716;
+}
+
+/* 🔽 Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px 16px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
 }
