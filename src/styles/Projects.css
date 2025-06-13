@@ -1,0 +1,61 @@
+.projects-page {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.projects-heading {
+  text-align: center;
+  font-style: oblique;
+  color: #125716;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-box {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #125716;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #125716;
+}
+
+.project-box h3 {
+   font-style: oblique;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #eeeeee;
+}
+
+.project-box p {
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+.stack {
+  color: #125716;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.project-actions a {
+  color: #125716;
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
